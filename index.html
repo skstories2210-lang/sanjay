@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE - Premium Fashion Store</title>
+    <meta name="description" content="Shop the latest premium fashion for men, women, and children at LUXE. High-quality designs with global shipping.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">LUXE<span>.</span></a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link active" data-filter="all">All</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-filter="men">Men</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-filter="women">Women</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-filter="children">Children</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search clothes...">
+                    <i class="ri-search-line"></i>
+                </div>
+                <div class="cart-btn" id="cart-btn">
+                    <span class="cart-count">0</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section">
+            <div class="hero-container container grid">
+                <div class="hero-data">
+                    <h1 class="hero-title">ELEVATE YOUR <br> STYLE GAME</h1>
+                    <p class="hero-description">
+                        Discover the finest collection of premium apparel. 
+                        Crafted for those who dare to stand out.
+                    </p>
+                    <a href="#shop" class="button">Explore Collection</a>
+                </div>
+                <div class="hero-image-wrapper">
+                    <!-- Image will be inserted via CSS or JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section class="shop section container" id="shop">
+            <div class="section-header">
+                <h2 class="section-title">New Arrivals</h2>
+                <div class="filter-pills">
+                    <!-- Filter pills will be active via JS -->
+                </div>
+            </div>
+
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be injected by main.js -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Product Details -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body grid" id="modal-body">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <span class="close-cart">&times;</span>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items injected by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="button checkout-btn">Checkout Now</button>
+        </div>
+    </div>
+
+    <footer class="footer section">
+        <div class="footer-container container grid">
+            <div class="footer-content">
+                <a href="#" class="logo">LUXE<span>.</span></a>
+                <p class="footer-description">The pinnacle of modern fashion.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Children</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <!-- Social Icons -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
